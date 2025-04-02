@@ -1,0 +1,149 @@
+.cabecalho__menu-hamburguer {
+    width: 48px;
+    height: 48px;
+    background-image: url("../assets/logo/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.button {
+    background: none;
+    border: none;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: #000000;
+}
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    width: 60vw;
+    z-index: 10;
+}
+
+.dropdown__menu a {
+    display: block;
+}
+
+.dropdown__menu__titulo, .dropdown__menu__item {
+    padding: 1em;
+    background-color: var(--cor-branco);
+}
+
+.dropdown__menu__titulo {
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.dropdown__menu__item {
+    color: rgb(10, 10, 112);
+    text-decoration: none;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.container__texto {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        gap: 4em;
+    }
+    
+    .container__titulo, .container__titulo__negrito {
+        font-family: var(--fonte-secundario);
+        font-size: 30px;
+    }
+
+    .container__imagem {
+        margin-left: 2em;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo__negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+        gap: 3em;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .opcoes__item {
+        color: #000000;
+        font-size: 16px;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .container__imagem__favoritos {
+        display: none;
+    }
+
+    .container__hamburguer {
+        display: none;
+    }
+
+    .dropdown__menu {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1524px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 400;
+    }
+
+    .cabecalho {
+        padding: 0 2em ;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+}
